@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+     <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="formcard">
+            <div class="card">
+
+                    <h2 class="card-title">Connectez Vous</h2>
+
+                <div class="card-body">
+                    <form class="contact-from" method="post" action="{% url 'login' %}"> {% csrf_token %}
+
+                                {{ form | crispy }}
+
+
+
+									<button class="site-btn" type="submit">Connexion</button> <br/>
+                                    <a href="#" class="">Mot de passe oublier?</a> <br/>
+                                    <a href="#" class="">Vous n'avez pas de compte?  Inscrivez vous</a>
+
+
+						</form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}

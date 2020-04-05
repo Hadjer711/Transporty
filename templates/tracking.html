@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block content %}
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBB9e3RPH6UKcOWsmTkAow2QZClHnMElPo'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>how do i add a google map to my website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=108a2cb5d7b7dd10f6d8178ecead98579ba590f3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(28.00060627029274,2.9999999999999893),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.00060627029274,2.9999999999999893)});infowindow = new google.maps.InfoWindow({content:'<strong>Localisation de la marchandise</strong><br>Agha<br>16000 algiers<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+{% endblock %}

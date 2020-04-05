@@ -1,0 +1,82 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="subscription-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="sub-text">
+						<h2>Inscrivez vous</h2>
+						<h3>...</h3>
+						<p>Afin de bénéficier de nos service de transport de marchandise </p>
+						<a href="#" class="site-btn">Inscription</a>
+                        <a href="#" class="site-btn sb-c2">Connexion</a>
+					</div>
+				</div>
+				<div class="col-lg-6 ">
+							<div class="imageintro align-content-center">
+								<img src="{% static 'img/intro.png' %}" alt="">
+							</div>
+						</div>
+			</div>
+		</div>
+	</section>
+    <section class="intro-section spad">
+		<div class="container">
+            <div class="row" >
+            <h2>Vous devez etre connecter d'abord afin de déposer une annonce</h2>
+                <br/> <br/>
+            </div>
+			<div class="row">
+				<div class="col-lg-6 centerclass">
+						<a href="{% url 'trajet' %}" class="site-btn sb-c2">Deposer une annonce de trajet</a>
+				</div>
+				<div class="col-lg-6 centerclass">
+						<a href="{% url 'marchandise' %}" class="site-btn sb-c2">Deposer une annonce de marchandise</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="how-section spad set-bg" data-setbg="img/how-to-bg.jpg">
+		<div class="container text-white">
+			<div class="section-title">
+				<h2>Client Satisfait</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="how-item">
+						<div class="hi-icon">
+
+						</div>
+						<h4>Ishak Boushaki Hadjer</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipi-scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="how-item">
+						<div class="hi-icon">
+
+						</div>
+						<h4>Houichi Yousra</h4>
+						<p>Donec in sodales dui, a blandit nunc. Pellen-tesque id eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam massa odio, portti-tor vitae efficitur non. </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="how-item">
+						<div class="hi-icon">
+
+						</div>
+						<h4>Benaida Lydia</h4>
+						<p>Ablandit nunc. Pellentesque id eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam massa odio, porttitor vitae efficitur non, ultric-ies volutpat tellus. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+{% endblock %}

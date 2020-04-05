@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transporty</title>
+    <!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <script src="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css"></script>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=108a2cb5d7b7dd10f6d8178ecead98579ba590f3'>
+    </script>
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBB9e3RPH6UKcOWsmTkAow2QZClHnMElPo'></script>
+
+
+</head>
+<body>
+
+{% include 'navbar.html' %}
+{% block content %}
+
+{% endblock %}
+{% include 'footer.html' %}
+
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
